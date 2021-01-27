@@ -1,6 +1,17 @@
 const isPrime = num => {
   // do code here
-
+  let divider = 0;
+  for (let i = 1; i <= num; i++) {
+    if (num % i === 0) {
+      divider++;
+    }
+  }
+  // console.log(divider)
+  if (divider == 2) {
+    return `${num} IS A PRIME`;
+  } else {
+    return `${num} IS NOT A PRIME`;
+  }
 }
 
 // do not change this code below
